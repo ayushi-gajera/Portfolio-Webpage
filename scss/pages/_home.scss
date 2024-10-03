@@ -28,3 +28,14 @@
     overflow-y: scroll;
     scrollbar-width: none;
 }
+
+.message-section {
+    margin-top: -1.1rem;
+}
+
+.message-section__chats {
+    max-width: 550px; 
+    max-height: 655px; 
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
