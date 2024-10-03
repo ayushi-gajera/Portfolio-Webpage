@@ -21,6 +21,8 @@
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         width: 20rem;
         margin-left: -6rem;
+        position: relative;
+        left: -3rem;
 
         &__search {
             border: none;

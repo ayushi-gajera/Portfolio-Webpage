@@ -13,7 +13,18 @@
 .project {
     margin-left: 2rem;
     margin-top: -2rem;
-    background-color: $color-white;
+    background-color: $color-white-light;
     border-radius: 2rem;
-    min-width: 700px;
+    min-width: 600px;
+}
+
+.project-card {
+    max-width: 550px; 
+    max-height: 625px; 
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }

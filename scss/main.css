@@ -15,7 +15,7 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
   position: relative;
-  left: -2.5rem;
+  left: -3rem;
 }
 
 .nav {
@@ -40,6 +40,8 @@ body {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   width: 20rem;
   margin-left: -6rem;
+  position: relative;
+  left: -3rem;
 }
 .nav__searchbar__search {
   border: none;
@@ -154,6 +156,231 @@ body {
   cursor: pointer;
 }
 
+.project-card__1 {
+  width: 15rem;
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+  height: 14rem;
+  padding: 1.1rem;
+  margin-top: 2.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.project-card__1__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-card__1__nav p {
+  font-size: 0.8rem;
+}
+.project-card__1__nav :last-child {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.project-card__1__header {
+  margin-top: 1rem;
+  text-align: center;
+}
+.project-card__1__header p {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.project-card__1__progress {
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 0.4rem;
+}
+.project-card__1__progress h5 {
+  padding-bottom: 0.6rem;
+}
+.project-card__1__progress p {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: end;
+}
+.project-card__1__progress-bar {
+  width: 100%;
+  height: 0.4rem;
+  background-color: #e0e0e0;
+  border-radius: 2rem;
+}
+.project-card__1__progress-bar-fill {
+  height: 100%;
+  background-color: #00bfff;
+  border-radius: 5px;
+}
+.project-card__1__footer {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  justify-content: space-between;
+}
+.project-card__1__footer__image-add {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.project-card__1__footer__image-add__addBtn {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  color: #FFFFFF;
+  background-color: #00bfff;
+  border-radius: 50%;
+  position: relative;
+  left: 1.2rem;
+  cursor: pointer;
+}
+.project-card__1__footer__image-add__img {
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.project-card__1__footer__image-add__img2 {
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  left: 1rem;
+}
+.project-card__1__footer__btn {
+  background-color: rgb(222, 240, 247);
+  border: none;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #00bfff;
+  cursor: pointer;
+}
+.project-card__1__footer__btn:hover {
+  background-color: rgb(188, 222, 236);
+  transition: all 0.5s;
+}
+
+.project-card__2 {
+  background-color: rgb(237, 205, 160);
+  width: 15rem;
+  border-radius: 2rem;
+  height: 14rem;
+  padding: 1.1rem;
+  margin-top: 2.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.project-card__2__progress-bar-fill {
+  height: 100%;
+  background-color: rgb(235, 123, 11);
+  border-radius: 5px;
+}
+.project-card__2__footer__image-add__addBtn {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  color: #FFFFFF;
+  background-color: rgb(235, 123, 11);
+  border-radius: 50%;
+  position: relative;
+  left: 1.2rem;
+  cursor: pointer;
+}
+.project-card__2__footer__btn {
+  background-color: #fffcfc;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgb(235, 123, 11);
+  cursor: pointer;
+}
+.project-card__2__footer__btn:hover {
+  background-color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+.project-card__3 {
+  background-color: #B4F1CE;
+  width: 15rem;
+  border-radius: 2rem;
+  height: 14rem;
+  padding: 1.1rem;
+  margin-top: 2.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.project-card__3__progress-bar-fill {
+  height: 100%;
+  background-color: rgb(0, 168, 11);
+  border-radius: 5px;
+}
+.project-card__3__footer__image-add__addBtn {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  color: #FFFFFF;
+  background-color: rgb(0, 168, 11);
+  border-radius: 50%;
+  position: relative;
+  left: 1.2rem;
+  cursor: pointer;
+}
+.project-card__3__footer__btn {
+  background-color: #fffcfc;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgb(0, 168, 11);
+  cursor: pointer;
+}
+.project-card__3__footer__btn:hover {
+  background-color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+.project-card__4 {
+  background-color: #FFD3E2;
+  width: 15rem;
+  border-radius: 2rem;
+  height: 14rem;
+  padding: 1.1rem;
+  margin-top: 2.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.project-card__4__progress-bar-fill {
+  height: 100%;
+  background-color: palevioletred;
+  border-radius: 5px;
+}
+.project-card__4__footer__image-add__addBtn {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  color: #FFFFFF;
+  background-color: palevioletred;
+  border-radius: 50%;
+  position: relative;
+  left: 1.2rem;
+  cursor: pointer;
+}
+.project-card__4__footer__btn {
+  background-color: #fffcfc;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: palevioletred;
+  cursor: pointer;
+}
+.project-card__4__footer__btn:hover {
+  background-color: #FFFFFF;
+  transition: all 0.5s;
+}
+
 .container {
   background-color: #F3F6FD;
   margin: 5rem;
@@ -169,7 +396,18 @@ body {
 .project {
   margin-left: 2rem;
   margin-top: -2rem;
-  background-color: #FFFFFF;
+  background-color: #fffcfc;
   border-radius: 2rem;
-  min-width: 700px;
+  min-width: 600px;
+}
+
+.project-card {
+  max-width: 550px;
+  max-height: 625px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }/*# sourceMappingURL=main.css.map */
