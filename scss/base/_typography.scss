@@ -5,4 +5,13 @@
     font-weight: 800;
     position: relative;
     left: -3rem;
+
+    @include respond(tab-land) {
+        font-size: 1.3rem;
+    }
+
+    @include respond(tab-mini) {
+        font-size: 1.2rem;
+        left: 1rem;
+    }
 }

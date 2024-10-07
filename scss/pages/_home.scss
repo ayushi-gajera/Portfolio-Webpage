@@ -1,8 +1,19 @@
 .container {
     background-color: $color-light-green;
-    margin: 5rem;
-    max-width: 1200px;
-    border-radius: 2rem;
+    // @include respond(tab-land) {
+    //     max-width: 1000px;
+    //     max-height: 900px;
+    // }
+
+    // @include respond(tab-mini) {
+    //     max-width: 1030px;
+    //     max-height: 650px;
+    // }
+
+    // @include respond(tab-port) {
+    //     max-width: 900px;
+    //     max-height: 600px;
+    // }
 }
 
 .main-section {
@@ -15,27 +26,56 @@
     margin-top: -2rem;
     background-color: $color-white-light;
     border-radius: 2rem;
-    min-width: 600px;
+    min-width: 700px;
+    max-height: 700px;
+
+    @include respond(tab-land) {
+        min-width: 540px;
+        max-height: 810px;
+    }
+
+    @include respond(tab-mini) {
+        min-width: 450px;
+        max-height: 565px;
+    }
 }
 
 .project-card {
-    max-width: 550px; 
-    max-height: 625px; 
+    max-width: 700px; 
+    max-height: 425px; 
     padding: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     overflow-y: scroll;
     scrollbar-width: none;
+
+    @include respond(tab-mini) {
+        min-width: 450px;
+        max-height: 400px;
+        justify-content: space-around;
+        margin-left: -2.5rem;
+    }
 }
 
 .message-section {
     margin-top: -1.1rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: relative;
+    max-height: 600px;
 }
 
 .message-section__chats {
-    max-width: 550px; 
-    max-height: 655px; 
     overflow-y: scroll;
     scrollbar-width: none;
+    max-height: 700px;
+
+    @include respond(tab-land) {
+        max-height: 500px;
+    }
+
+    @include respond(tab-mini) {
+        max-height: 400px;
+    }
 }

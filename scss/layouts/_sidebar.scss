@@ -6,6 +6,7 @@
     font-size: 1.5rem;
     list-style: none;
     margin-left: 1rem;
+    
     &__home {
         margin-left: -1rem;
         width: 4rem;
@@ -19,5 +20,23 @@
     }
     :hover {
         cursor: pointer;
+    }
+
+    @include respond(tab-land) {
+        font-size: 1.2rem;
+
+        &__home {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    @include respond(tab-mini) {
+        font-size: 1.1rem;
+
+        &__home {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
 }
