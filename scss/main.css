@@ -580,6 +580,7 @@ body {
     min-width: 12rem;
     height: 12.5rem;
     padding: 0.7rem;
+    height: 13rem;
   }
 }
 @media only screen and (max-width: 50em) {
@@ -747,6 +748,7 @@ body {
     width: 12rem;
     height: 12.5rem;
     padding: 0.7rem;
+    height: 13rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -820,6 +822,7 @@ body {
     width: 12rem;
     height: 12.5rem;
     padding: 0.7rem;
+    height: 13rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -893,6 +896,7 @@ body {
     width: 12rem;
     height: 12.5rem;
     padding: 0.7rem;
+    height: 13rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
