@@ -1,12 +1,32 @@
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
 .project {
     padding: 2.5rem;
-    
+    font-size: 1.2rem;
+
     &__details {
         display: flex;
         justify-content: space-between;
+
+        @include respond(tab-mini) {
+            font-size: 1.1rem;
+        }
+
+        @include respond(tab-port) {
+            margin: -0.5rem -1rem;
+            font-size: 1rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
     }
 
     &__menu {
+        margin-bottom: 1rem;
         margin-top: 2.5rem;
         display: flex;
         justify-content: space-between;
@@ -16,8 +36,26 @@
             gap: 2rem;
             list-style:circle;
 
+            @include respond(tab-port) {
+                margin: -1rem;
+                gap: 2rem;
+                font-size: 0.85rem;
+            }
+
             &__item li div{
                 font-size: 0.85rem;
+
+                @include respond(tab-port) {
+                    font-size: 0.7rem;
+                }
+
+                @include respond(tablet) {
+                    font-size: 0.85rem;
+                }
+
+                @include respond(phone) {
+                    font-size: 1rem;
+                }
             }
             :first-child {
                 list-style: none;
@@ -30,6 +68,48 @@
             gap: 1.2rem;
             font-size: 1.1rem;
             cursor: pointer;
+
+            @include respond(tab-port) {
+                gap: 0.7rem;
+                font-size: 0.9rem;
+            }
+
+            @include respond(tablet) {
+                gap: 1.2rem;
+                font-size: 1.1rem;
+            }
+        }
+
+        @include respond(phone) {
+
+            .menu {
+                display: block;
+                cursor: pointer;
+                font-size: 20px;
+                margin-top: -0.1rem;
+                margin-right: 1rem;
+            }
+              
+            .project__menu__list {
+                display: none;
+                list-style: none;
+                position: absolute;
+                top: 220px;
+                left: 100px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 10px;
+                z-index: 1;
+                max-width: 10rem;
+                flex-wrap: wrap;
+                height: 18rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            .listDisplay {
+                display: flex;
+            }
         }
     }
 }

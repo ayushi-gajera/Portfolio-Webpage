@@ -16,8 +16,9 @@
 
     <!-- NAVBAR -->
     <nav class="nav">
-
-      <i class="fa-solid fa-grip-lines nav__lines"></i>
+      <div id="asideToggle">
+        <i class="fa-solid fa-grip-lines nav__lines"></i>
+      </div>
 
       <!-- title -->
       <h1 class="heading-primary">Portfolio</h1>
@@ -29,23 +30,29 @@
       </div>
 
       <!-- add btn -->
-      <div class="nav__add"><i class="fa-solid fa-plus"></i></div>
+      <div class="menu-items" id="menuItems">
+        <div class="nav__add"><i class="fa-solid fa-plus"></i></div>
 
-      <!-- notification-icon -->
-      <div class="nav__notification">
-        <div class="nav__notification__dot"></div>
-        <i class="fa-regular fa-bell"></i>
+        <!-- notification-icon -->
+        <div class="nav__notification links">
+          <div class="nav__notification__dot"></div>
+          <i class="fa-regular fa-bell"></i>
+        </div>
+
+        <!-- profile -->
+        <div class="nav__profile">
+          <img src="./images/profileImg.jpg" alt="img" class="nav__profile__img">
+          <h3>Hira R</h3>
+        </div>
       </div>
 
-      <!-- profile -->
-      <div class="nav__profile">
-        <img src="./images/profileImg.jpg" alt="img" class="nav__profile__img">
-        <h3>Hira R</h3>
+      <div class="menu" id="menuToggle">
+        <i class="fas fa-bars"></i>
       </div>
     </nav>
 
     <section class="main-section">
-      <aside>
+      <aside class="aside-items" id="asideItems">
         <ul class="icons">
           <li class="icons__home"><i class="fa-solid fa-house"></i></li>
           <li><i class="fa-regular fa-user"></i></li>
@@ -65,7 +72,8 @@
 
         <!-- menu-list -->
         <div class="project__menu">
-          <ul class="project__menu__list">
+          <ul class="project__menu__list" id="project__menu__list1">
+            
             <div class="project__menu__list__item">
               <h3>45</h3>
               <li>
@@ -86,7 +94,7 @@
                 <div>In progress</div>
               </li>
             </div>
-
+            
             <div class="project__menu__list__item">
               <h3>67</h3>
               <li>
@@ -94,6 +102,9 @@
               </li>
             </div>
           </ul>
+          <div class="menu" id="listToggle">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
           <div class="project__menu__icon">
             <i class="fa-solid fa-bars"></i>
             <i class="fas fa-border-all"></i>
@@ -440,6 +451,21 @@
     </section>
 
   </main>
+
+  <script>
+    document.getElementById("menuToggle").addEventListener("click", function () {
+      const menuItems = document.getElementById("menuItems");
+      menuItems.classList.toggle("show");
+    });
+    document.getElementById("listToggle").addEventListener("click", function () {
+      const listItem = document.getElementById("project__menu__list1");
+      listItem.classList.toggle("listDisplay");
+    });
+    document.getElementById("asideToggle").addEventListener("click", function () {
+      const asideItems = document.getElementById("asideItems");
+      asideItems.classList.toggle("display");
+    });
+  </script>
 </body>
 
 </html>

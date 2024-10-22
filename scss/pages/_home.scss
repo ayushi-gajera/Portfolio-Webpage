@@ -1,24 +1,26 @@
 .container {
     background-color: $color-light-green;
-    // @include respond(tab-land) {
-    //     max-width: 1000px;
-    //     max-height: 900px;
-    // }
-
-    // @include respond(tab-mini) {
-    //     max-width: 1030px;
-    //     max-height: 650px;
-    // }
-
-    // @include respond(tab-port) {
-    //     max-width: 900px;
-    //     max-height: 600px;
-    // }
+   
+    @include respond(tablet) {
+        height: 1700px;
+    }
+    
+    @include respond(phone) {
+        height: 1700px;
+    }
 }
 
 .main-section {
     margin: 4rem 2rem;
     display: flex;
+
+    @include respond(tablet) {
+        display: block;
+    }
+
+    @include respond(phone) {
+        display: block;
+    }
 }
 
 .project {
@@ -26,9 +28,7 @@
     margin-top: -2rem;
     background-color: $color-white-light;
     border-radius: 2rem;
-    min-width: 700px;
-    max-height: 700px;
-
+    
     @include respond(tab-land) {
         min-width: 540px;
         max-height: 810px;
@@ -37,6 +37,19 @@
     @include respond(tab-mini) {
         min-width: 450px;
         max-height: 565px;
+    }
+
+    @include respond(tab-port) {
+        min-width: 350px;
+        margin-left: 1rem;
+    }
+
+    @include respond(tablet) {
+        min-width: 260px;
+    }
+
+    @include respond(phone) {
+        min-width: 260px;
     }
 }
 
@@ -49,12 +62,27 @@
     flex-wrap: wrap;
     overflow-y: scroll;
     scrollbar-width: none;
-
+    
     @include respond(tab-mini) {
         min-width: 450px;
         max-height: 400px;
         justify-content: space-around;
         margin-left: -2.5rem;
+    }
+
+    @include respond(tab-port) {
+        margin-left: -1.5rem;
+        min-width: 320px;
+    }
+
+    @include respond(tablet) {
+        margin-left: -1.4rem;
+        min-width: 220px;
+    }
+
+    @include respond(phone) {
+        margin-left: -1.4rem;
+        min-width: 220px;
     }
 }
 
@@ -64,6 +92,18 @@
     scrollbar-width: none;
     position: relative;
     max-height: 600px;
+
+    @include respond(tablet) {
+        margin-top: 4rem;
+        height: auto;
+        overflow-y: visible;
+    }
+
+    @include respond(phone) {
+        margin-top: 4rem;
+        height: auto;
+        overflow-y: visible;
+    }
 }
 
 .message-section__chats {
@@ -77,5 +117,13 @@
 
     @include respond(tab-mini) {
         max-height: 400px;
+    }
+
+    @include respond(tablet) {
+        overflow-y: visible;
+    }
+
+    @include respond(phone) {
+        overflow-y: visible;
     }
 }

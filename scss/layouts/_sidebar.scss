@@ -1,3 +1,38 @@
+.aside-items {
+    @include respond(tablet) {        
+        display: none;
+        position: absolute;
+        top: 52px;
+        left: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        z-index: 1;
+        font-size: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @include respond(phone) {        
+        display: none;
+        position: absolute;
+        top: 52px;
+        left: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        z-index: 1;
+        font-size: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+}
+
 .icons {
     display: flex;
     flex-direction: column;
@@ -6,6 +41,24 @@
     font-size: 1.5rem;
     list-style: none;
     margin-left: 1rem;
+
+    @include respond(tab-port) {
+        margin-left: 0rem;
+    }
+
+    @include respond(tablet) {
+        li {
+            font-size: 1.3rem;
+        }
+        margin-left: 0.5rem;
+    }
+
+    @include respond(phone) {
+        li {
+            font-size: 1.3rem;
+        }
+        margin-left: 0.5rem;
+    }
     
     &__home {
         margin-left: -1rem;
@@ -17,6 +70,18 @@
         background-color: $color-black;
         color: $color-white;
         border-radius: 50%;
+
+        @include respond(tab-port) {
+            margin-left: -0.5rem;
+        }
+
+        @include respond(tablet) {
+            margin-left:-0.5rem;
+        }
+
+        @include respond(phone) {
+            margin-left:-0.5rem;
+        }
     }
     :hover {
         cursor: pointer;
@@ -34,6 +99,30 @@
     @include respond(tab-mini) {
         font-size: 1.1rem;
 
+        &__home {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        font-size: 1rem;
+        &__home {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+    }
+
+    @include respond(tablet) {
+        font-size: 1rem;
+        &__home {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    @include respond(phone) {
+        font-size: 1rem;
         &__home {
             width: 2.5rem;
             height: 2.5rem;
