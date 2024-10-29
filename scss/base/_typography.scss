@@ -1,22 +1,18 @@
 .heading-primary {
     color: $color-black;
-    margin-left: -5rem;
-    font-size: 1.5rem;
-    font-weight: 800;
-    position: relative;
-    left: -3rem;
+    font-size: 2rem;
+    font-weight: 700;
 
     @include respond(tab-land) {
-        font-size: 1.3rem;
+        font-size: 1.9rem;
     }
 
     @include respond(tab-mini) {
-        font-size: 1.2rem;
-        left: 1rem;
+        font-size: 1.7rem;
     }
 
     @include respond(tab-port) {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     @include respond(tablet) {

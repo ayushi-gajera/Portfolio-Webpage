@@ -5,31 +5,27 @@
 }
 
 body {
-  font-family: "Arial";
+  font-family: "Outfit", sans-serif;
 }
 
 .heading-primary {
   color: #151522;
-  margin-left: -5rem;
-  font-size: 1.5rem;
-  font-weight: 800;
-  position: relative;
-  left: -3rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 @media only screen and (max-width: 75em) {
   .heading-primary {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
   }
 }
 @media only screen and (max-width: 62.5em) {
   .heading-primary {
-    font-size: 1.2rem;
-    left: 1rem;
+    font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 50em) {
   .heading-primary {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -45,7 +41,6 @@ body {
 
 .menu-items {
   display: flex;
-  justify-content: space-around;
 }
 
 .menu {
@@ -55,15 +50,27 @@ body {
 
 .nav {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   padding-top: 1.5rem;
-  justify-content: space-around;
-  position: relative;
+}
+.nav__left-heading {
+  margin-left: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5.5rem;
 }
 @media only screen and (max-width: 75em) {
-  .nav {
-    padding-top: 1rem;
+  .nav__left-heading {
+    gap: 4rem;
   }
+}
+@media only screen and (max-width: 50em) {
+  .nav__left-heading {
+    gap: 1.5rem;
+  }
+}
+.nav__right-heading {
+  margin-right: 2rem;
 }
 @media only screen and (max-width: 37.5em) {
   .nav .menu {
@@ -113,31 +120,23 @@ body {
     display: flex;
   }
 }
-.nav__lines {
-  margin-top: -0.5rem;
+.nav .nav__lines {
   font-size: 1.5rem;
   cursor: pointer;
-  position: relative;
-  left: -3rem;
 }
 @media only screen and (max-width: 62.5em) {
-  .nav__lines {
+  .nav .nav__lines {
     font-size: 1.2rem;
-    left: -0.5rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .nav__lines {
+  .nav .nav__lines {
     font-size: 1.2rem;
-    position: relative;
-    left: 2rem;
   }
 }
 @media only screen and (max-width: 30em) {
-  .nav__lines {
+  .nav .nav__lines {
     font-size: 1.2rem;
-    position: relative;
-    left: 2rem;
   }
 }
 .nav__searchbar {
@@ -147,15 +146,10 @@ body {
   border-radius: 2rem;
   padding: 0.7rem 0.7rem;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  width: 20rem;
-  margin-left: -6rem;
-  position: relative;
-  left: -3rem;
+  width: 31rem;
 }
 @media only screen and (max-width: 75em) {
   .nav__searchbar {
-    position: relative;
-    left: -2rem;
     width: 17rem;
   }
 }
@@ -163,30 +157,22 @@ body {
   .nav__searchbar {
     width: 15rem;
     padding: 0.5rem 0.5rem;
-    left: 2rem;
   }
 }
 @media only screen and (max-width: 50em) {
   .nav__searchbar {
     width: 12rem;
     padding: 0.5rem 0.5rem;
-    left: 3rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .nav__searchbar {
     width: 22rem;
-    position: relative;
-    margin-left: 4rem;
-    left: -1rem;
   }
 }
 @media only screen and (max-width: 30em) {
   .nav__searchbar {
     width: 22rem;
-    position: relative;
-    margin-left: 4rem;
-    left: -1rem;
   }
 }
 .nav__searchbar__search {
@@ -212,10 +198,16 @@ body {
   border-radius: 50%;
   color: #FFFFFF;
   height: 2rem;
+  text-align: center;
+  width: 2rem;
   padding: 0.6rem;
   font-size: 0.7rem;
   cursor: pointer;
   margin-right: 1rem;
+}
+.nav__add :hover {
+  transition: 0.8s;
+  transform: scale(1.5);
 }
 @media only screen and (max-width: 37.5em) {
   .nav__add {
@@ -338,108 +330,59 @@ body {
   flex-direction: column;
 }
 
-.icons {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
-  font-size: 1.5rem;
-  list-style: none;
-  margin-left: 1rem;
-}
-@media only screen and (max-width: 50em) {
-  .icons {
-    margin-left: 0rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .icons {
-    margin-left: 0.5rem;
-  }
-  .icons li {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .icons {
-    margin-left: 0.5rem;
-  }
-  .icons li {
-    font-size: 1.3rem;
-  }
-}
 .icons__home {
-  margin-left: -1rem;
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #151522;
   color: #FFFFFF;
   border-radius: 50%;
 }
-@media only screen and (max-width: 50em) {
-  .icons__home {
-    margin-left: -0.5rem;
-  }
+
+.icons li {
+  height: 4.5rem;
+  width: 4rem;
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-@media only screen and (max-width: 37.5em) {
-  .icons__home {
-    margin-left: -0.5rem;
-  }
+.icons li i {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-@media only screen and (max-width: 30em) {
-  .icons__home {
-    margin-left: -0.5rem;
-  }
-}
-.icons :hover {
+.icons li i:hover {
+  text-align: center;
+  height: 4rem;
+  width: 4rem;
+  background-color: #000;
+  color: #FFFFFF;
+  border-radius: 50%;
   cursor: pointer;
 }
 @media only screen and (max-width: 75em) {
-  .icons {
-    font-size: 1.2rem;
-  }
-  .icons__home {
-    width: 3rem;
-    height: 3rem;
+  .icons li {
+    font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 62.5em) {
-  .icons {
-    font-size: 1.1rem;
-  }
-  .icons__home {
-    width: 2.5rem;
-    height: 2.5rem;
+  .icons li {
+    font-size: 1.3rem;
   }
 }
 @media only screen and (max-width: 50em) {
-  .icons {
-    font-size: 1rem;
-  }
-  .icons__home {
-    width: 2.2rem;
-    height: 2.2rem;
+  .icons li {
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .icons {
-    font-size: 1rem;
-  }
-  .icons__home {
-    width: 2.5rem;
-    height: 2.5rem;
+  .icons li {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 30em) {
-  .icons {
-    font-size: 1rem;
-  }
-  .icons__home {
-    width: 2.5rem;
-    height: 2.5rem;
+  .icons li {
+    font-size: 1.5rem;
   }
 }
 
@@ -560,13 +503,14 @@ body {
 }
 
 .project-card__1 {
-  min-width: 15rem;
+  min-width: 14rem;
   background-color: #FFFFFF;
   border-radius: 2rem;
   height: 14rem;
   padding: 1.1rem;
+  margin-left: 0.3rem;
   margin-top: 2.5rem;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 75em) {
   .project-card__1 {
@@ -650,7 +594,7 @@ body {
 .project-card__1__progress-bar {
   width: 100%;
   height: 0.4rem;
-  background-color: #e0e0e0;
+  background-color: rgb(245, 248, 251);
   border-radius: 2rem;
 }
 .project-card__1__progress-bar-fill {
@@ -724,12 +668,13 @@ body {
 
 .project-card__2 {
   background-color: rgb(237, 205, 160);
-  width: 15rem;
+  width: 14rem;
   border-radius: 2rem;
   height: 14rem;
+  margin-left: 0.3rem;
   padding: 1.1rem;
   margin-top: 2.5rem;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 50em) {
   .project-card__2 {
@@ -798,12 +743,13 @@ body {
 
 .project-card__3 {
   background-color: #B4F1CE;
-  width: 15rem;
+  width: 14rem;
   border-radius: 2rem;
   height: 14rem;
+  margin-left: 0.3rem;
   padding: 1.1rem;
   margin-top: 2.5rem;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 50em) {
   .project-card__3 {
@@ -872,12 +818,13 @@ body {
 
 .project-card__4 {
   background-color: #FFD3E2;
-  width: 15rem;
+  width: 14rem;
   border-radius: 2rem;
+  margin-left: 0.3rem;
   height: 14rem;
   padding: 1.1rem;
   margin-top: 2.5rem;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 50em) {
   .project-card__4 {
@@ -949,6 +896,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+  padding-right: 2rem;
+  position: relative;
   border-bottom: 1px solid #c4c4c4;
 }
 @media only screen and (max-width: 75em) {
@@ -1010,6 +959,11 @@ body {
 
 .message-section__chats__messages {
   padding: 1.2rem;
+  padding-right: 2rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  width: 100%;
   border-bottom: 1px solid #c4c4c4;
 }
 @media only screen and (max-width: 62.5em) {
@@ -1034,7 +988,12 @@ body {
 }
 .message-section__chats__messages__details {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.message-section__chats__messages__details__icon {
+  display: flex;
+  justify-content: space-between;
 }
 .message-section__chats__messages__details__img {
   cursor: pointer;
@@ -1074,61 +1033,60 @@ body {
     width: 3rem;
   }
 }
-.message-section__chats__messages__details__name h4 {
-  padding-bottom: 0.5rem;
+.message-section__chats__messages__details h4 {
   font-size: 1.1rem;
 }
 @media only screen and (max-width: 75em) {
-  .message-section__chats__messages__details__name h4 {
+  .message-section__chats__messages__details h4 {
     font-size: 1rem;
   }
 }
 @media only screen and (max-width: 62.5em) {
-  .message-section__chats__messages__details__name h4 {
+  .message-section__chats__messages__details h4 {
     font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 50em) {
-  .message-section__chats__messages__details__name h4 {
+  .message-section__chats__messages__details h4 {
     font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .message-section__chats__messages__details__name h4 {
+  .message-section__chats__messages__details h4 {
     font-size: 1.1rem;
   }
 }
 @media only screen and (max-width: 30em) {
-  .message-section__chats__messages__details__name h4 {
+  .message-section__chats__messages__details h4 {
     font-size: 1.1rem;
   }
 }
-.message-section__chats__messages__details__name p {
-  font-size: 0.9rem;
+.message-section__chats__messages__details p {
+  font-size: 0.8rem;
 }
 @media only screen and (max-width: 75em) {
-  .message-section__chats__messages__details__name p {
+  .message-section__chats__messages__details p {
     font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 62.5em) {
-  .message-section__chats__messages__details__name p {
+  .message-section__chats__messages__details p {
     font-size: 0.7rem;
     min-width: 100%;
   }
 }
 @media only screen and (max-width: 50em) {
-  .message-section__chats__messages__details__name p {
+  .message-section__chats__messages__details p {
     font-size: 0.65rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .message-section__chats__messages__details__name p {
+  .message-section__chats__messages__details p {
     font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 30em) {
-  .message-section__chats__messages__details__name p {
+  .message-section__chats__messages__details p {
     font-size: 0.9rem;
   }
 }
@@ -1158,50 +1116,19 @@ body {
 .message-section__chats__messages:hover {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: scale(1);
-  margin: -0.4rem 1rem;
-  border-radius: 1rem;
+  transform: scale(1.01);
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
   transition: all 0.3s;
-  position: absolute;
-  height: 8rem;
-}
-@media only screen and (max-width: 75em) {
-  .message-section__chats__messages:hover {
-    height: 7rem;
-    display: flex;
-  }
-}
-@media only screen and (max-width: 62.5em) {
-  .message-section__chats__messages:hover {
-    height: 6.8rem;
-    display: flex;
-  }
-}
-@media only screen and (max-width: 50em) {
-  .message-section__chats__messages:hover {
-    height: 6rem;
-    display: flex;
-    padding-top: 0.2rem;
-    margin: -0.4rem 0.5rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .message-section__chats__messages:hover {
-    height: 8rem;
-    margin: -0.4rem 1rem;
-    padding-top: 1.5rem;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .message-section__chats__messages:hover {
-    height: 8rem;
-    margin: -0.4rem 1rem;
-    padding-top: 1.5rem;
-  }
+  height: 7rem;
 }
 
 .container {
   background-color: #F3F6FD;
+  overflow: hidden;
+  height: 100svh;
+  width: 100%;
+  margin-top: -0.5rem;
 }
 @media only screen and (max-width: 37.5em) {
   .container {
@@ -1215,7 +1142,9 @@ body {
 }
 
 .main-section {
-  margin: 4rem 2rem;
+  height: 110svh;
+  width: 100%;
+  margin: 3rem 1rem;
   display: flex;
 }
 @media only screen and (max-width: 37.5em) {
@@ -1230,49 +1159,24 @@ body {
 }
 
 .project {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-top: -2rem;
   background-color: #fffcfc;
   border-radius: 2rem;
-}
-@media only screen and (max-width: 75em) {
-  .project {
-    min-width: 540px;
-    max-height: 810px;
-  }
-}
-@media only screen and (max-width: 62.5em) {
-  .project {
-    min-width: 450px;
-    max-height: 565px;
-  }
-}
-@media only screen and (max-width: 50em) {
-  .project {
-    min-width: 350px;
-    margin-left: 1rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .project {
-    min-width: 260px;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .project {
-    min-width: 260px;
-  }
+  width: 61.5%;
+  height: 85%;
 }
 
 .project-card {
-  max-width: 700px;
-  max-height: 425px;
-  padding: 0.5rem;
+  width: 102%;
+  height: 70%;
   display: flex;
-  justify-content: space-around;
+  gap: 2rem;
+  row-gap: 2rem;
   flex-wrap: wrap;
   overflow-y: scroll;
   scrollbar-width: none;
+  padding-bottom: 1rem;
 }
 @media only screen and (max-width: 62.5em) {
   .project-card {
@@ -1302,49 +1206,17 @@ body {
 }
 
 .message-section {
+  width: 32%;
+  height: 100%;
   margin-top: -1.1rem;
-  overflow-y: scroll;
-  scrollbar-width: none;
   position: relative;
-  max-height: 600px;
-}
-@media only screen and (max-width: 37.5em) {
-  .message-section {
-    margin-top: 4rem;
-    height: auto;
-    overflow-y: visible;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .message-section {
-    margin-top: 4rem;
-    height: auto;
-    overflow-y: visible;
-  }
 }
 
 .message-section__chats {
   overflow-y: scroll;
+  overflow-x: hidden;
   scrollbar-width: none;
-  max-height: 700px;
-}
-@media only screen and (max-width: 75em) {
-  .message-section__chats {
-    max-height: 500px;
-  }
-}
-@media only screen and (max-width: 62.5em) {
-  .message-section__chats {
-    max-height: 400px;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .message-section__chats {
-    overflow-y: visible;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .message-section__chats {
-    overflow-y: visible;
-  }
+  position: relative;
+  height: 66%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
