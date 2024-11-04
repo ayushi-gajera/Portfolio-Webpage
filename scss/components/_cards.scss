@@ -22,7 +22,7 @@
     }
 
     @include respond(tab-port) {
-        min-width: 19rem;
+        min-width: 15rem;
     }
 
     @include respond(tablet) {
@@ -179,7 +179,7 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 
     @include respond(tab-port) {
-        min-width: 19rem;
+        min-width: 15rem;
     }
 
     @include respond(tab-land) {
@@ -252,7 +252,7 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 
     @include respond(tab-port) {
-        min-width: 19rem;
+        min-width: 15rem;
     }
 
     @include respond(tab-land) {
@@ -325,7 +325,7 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 
     @include respond(tab-port) {
-        min-width: 19rem;
+        min-width: 15rem;
     }
 
     @include respond(tab-land) {

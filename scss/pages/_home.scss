@@ -4,25 +4,12 @@
     height: 100svh;
     width: 100%;
 
-    // @include respond(tab-mini) {
-    //     max-width: 1030px;
-    //     max-height: 650px;
-    // }
-
-    // @include respond(tab-port) {
-    //     max-width: 900px;
-    //     max-height: 600px;
-    // }
+    @include respond(tab-port) {
+        overflow-y: scroll;
+        scrollbar-width:none;
+    }
 
     margin-top: -0.5rem;
-
-    @include respond(tablet) {
-        height: 1700px;
-    }
-    
-    @include respond(phone) {
-        height: 1700px;
-    }
 }
 
 .main-section {
@@ -31,12 +18,13 @@
     margin: 3rem 1rem;
     display: flex;
 
-    // @include respond(tab-port) {
-    //     display: block;
-    // }
+    @include respond(tab-port) {
+        display: block;
+    }
 
     @include respond(tablet) {
         display: block;
+        margin: 3rem 0.2rem;
     }
 
     @include respond(phone) {
@@ -51,37 +39,17 @@
     border-radius: 2rem;
     width: 61.5%;
     height: 85%;
-    // @include respond(tab-land) {
-    //     min-width: 540px;
-    //     max-height: 810px;
-    // }
 
-    // @include respond(tab-mini) {
-    //     min-width: 450px;
-    //     max-height: 565px;
-    // }
-
-    // @include respond(tab-port) {
-    //     min-width: 350px;
-    //     margin-left: 1rem;
-    // }
-
-    // @include respond(tablet) {
-    //     min-width: 260px;
-    // }
-
-    // @include respond(phone) {
-    //     min-width: 260px;
-    // }
+    @include respond(tab-port) {
+        height: 75%;
+        width: 90%;
+    }
 }
 
 .project-card {
     width: 102%;
-    height: 70%;
-    // max-width: 700px; 
-    // max-height: 425px; 
+    height: 80%;
     display: flex;
-    // justify-content: center;
     gap: 2rem;
     row-gap: 2rem;
     flex-wrap: wrap;
@@ -91,7 +59,6 @@
     
     @include respond(tab-mini) {
         min-width: 450px;
-        max-height: 400px;
         justify-content: space-around;
         margin-left: -2.5rem;
     }
@@ -116,20 +83,14 @@
     width: 32%;
     height: 100%;
     margin-top: -1.1rem;
+    margin-right: 2rem;
     position: relative;
-    // max-height: 600px;
 
-    // @include respond(tablet) {
-    //     margin-top: 4rem;
-    //     height: auto;
-    //     overflow-y: visible;
-    // }
-
-    // @include respond(phone) {
-    //     margin-top: 4rem;
-    //     height: auto;
-    //     overflow-y: visible;
-    // }
+    @include respond(tab-port) {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        width: 90%;
+    }
 }
 
 .message-section__chats {
@@ -140,19 +101,15 @@
     height: 66%;
     width: 100%;
 
-    // @include respond(tab-land) {
-    //     max-height: 500px;
-    // }
+    @include respond(tab-mini) {
+        height: 76%;
+    }
 
-    // @include respond(tab-mini) {
-    //     max-height: 400px;
-    // }
+    @include respond(tablet) {
+        height: 66%;
+    }
 
-    // @include respond(tablet) {
-    //     overflow-y: visible;
-    // }
-
-    // @include respond(phone) {
-    //     overflow-y: visible;
-    // }
+    @include respond(phone) {
+        height: 66%;
+    }
 }

@@ -129,11 +129,11 @@
         }
 
         @include respond(tablet) {
-            width: 22rem;
+            width: 17rem;
         }
 
         @include respond(phone) {
-            width: 22rem;
+            width: 12rem;
         }
 
         &__search {

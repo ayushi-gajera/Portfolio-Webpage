@@ -39,14 +39,14 @@
             @include respond(tab-port) {
                 margin: -1rem;
                 gap: 2rem;
-                font-size: 0.85rem;
+                font-size: 0.95rem;
             }
 
             &__item li div{
                 font-size: 0.85rem;
 
                 @include respond(tab-port) {
-                    font-size: 0.7rem;
+                    font-size: 0.8rem;
                 }
 
                 @include respond(tablet) {
@@ -71,7 +71,7 @@
 
             @include respond(tab-port) {
                 gap: 0.7rem;
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
 
             @include respond(tablet) {
