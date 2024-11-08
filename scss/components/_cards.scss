@@ -1,59 +1,62 @@
+.lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.f_line {
+    margin-top: 1rem;
+    height: 2px;
+    width: 80%;
+    background-color: red;
+    border-radius: 100px;
+}
+
+.s_line {
+    margin-top: 0.5rem;
+    height: 2px;
+    width: 60%;
+    background-color: red;
+    border-radius: 100px;
+}
+
 .project-card__1 {
-    min-width: 14rem;
+    width: 100%;
     background-color: $color-white;
     border-radius: 2rem;
-    height: 14rem;
+    height: 16rem;
     padding: 1.1rem;
-    margin-left: 0.3rem;
-    margin-top: 2.5rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    
-    @include respond(tab-land) {
-        min-width: 13rem;
-        height: 13rem;
-        padding: 0.8rem;
-    }
 
-    @include respond(tab-mini) {
-        min-width: 12rem;
-        height: 12.5rem;
-        padding: 0.7rem;
-        height: 13rem;
-    }
-
-    @include respond(tab-port) {
-        min-width: 15rem;
-    }
-
-    @include respond(tablet) {
-        min-width: 19rem;
-    }
-
-    @include respond(phone) {
-        min-width: 12rem;
+    &:hover {
+        display: block;
     }
 
     &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-weight: 600;
+        color: rgb(108, 107, 107);
 
         p {
             font-size: 0.8rem;
         }
         :last-child {
             font-size: 1.2rem;
+            color: black;
             cursor: pointer;
         }
     }
 
     &__header {
-        margin-top: 1rem;
+        margin-top: 1.2rem;
         text-align: center;
 
         p {
-            margin-top:0.3rem;
-            margin-bottom: 0.5rem;
+            margin-top: 0.3rem;
+            margin-bottom: 1rem;
             font-size: 0.9rem;
 
             
@@ -72,11 +75,13 @@
         padding-bottom: 0.4rem;
 
         h5 {
+            font-size: 0.8rem;
             padding-bottom: 0.6rem;
         }
 
         p {
             margin-top: 0.6rem;
+            margin-bottom: 0.5rem;
             font-size: 0.9rem;
             font-weight: 600;
             text-align: end;
@@ -107,7 +112,7 @@
     &__footer {
         display: flex;
         align-items: center;
-        margin-top: 0.7rem;
+        margin-top: 1rem;
         justify-content: space-between;
         
         &__image-add {
@@ -169,39 +174,11 @@
 }
 
 .project-card__2 {
-    background-color: rgb(237, 205, 160);
-    width: 14rem;
+    background-color: $color-light-pink;
+    width: 100%;
     border-radius: 2rem;
-    height: 14rem;
-    margin-left: 0.3rem;
+    height: 16rem;
     padding: 1.1rem;
-    margin-top: 2.5rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-
-    @include respond(tab-port) {
-        min-width: 15rem;
-    }
-
-    @include respond(tab-land) {
-        width: 13rem;
-        height: 13rem;
-        padding: 0.8rem;
-    }
-
-    @include respond(tab-mini) {
-        width: 12rem;
-        height: 12.5rem;
-        padding: 0.7rem;
-        height: 13rem;
-    }
-
-    @include respond(tablet) {
-        min-width: 19rem;
-    }
-
-    @include respond(phone) {
-        min-width: 12rem;
-    }
     
         &__progress-bar-fill {
             height: 100%;
@@ -243,38 +220,11 @@
 
 .project-card__3 {
     background-color: $color-dark-green;
-    width: 14rem;
+    width: 100%;
     border-radius: 2rem;
-    height: 14rem;
-    margin-left: 0.3rem;
+    height: 16rem;
     padding: 1.1rem;
-    margin-top: 2.5rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-
-    @include respond(tab-port) {
-        min-width: 15rem;
-    }
-
-    @include respond(tab-land) {
-        width: 13rem;
-        height: 13rem;
-        padding: 0.8rem;
-    }
-
-    @include respond(tab-mini) {
-        width: 12rem;
-        height: 12.5rem;
-        padding: 0.7rem;
-        height: 13rem;
-    }
-    
-    @include respond(tablet) {
-        min-width: 19rem;
-    }
-
-    @include respond(phone) {
-        min-width: 12rem;
-    }
+    min-width: 12rem;
 
         &__progress-bar-fill {
             height: 100%;
@@ -316,38 +266,10 @@
 
 .project-card__4 {
     background-color: $color-dark-pink;
-    width: 14rem;
+    width: 100%;
     border-radius: 2rem;
-    margin-left: 0.3rem;
-    height: 14rem;
+    height: 16rem;
     padding: 1.1rem;
-    margin-top: 2.5rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-
-    @include respond(tab-port) {
-        min-width: 15rem;
-    }
-
-    @include respond(tab-land) {
-        width: 13rem;
-        height: 13rem;
-        padding: 0.8rem;
-    }
-
-    @include respond(tab-mini) {
-        width: 12rem;
-        height: 12.5rem;
-        padding: 0.7rem;
-        height: 13rem;
-    }
-    
-    @include respond(tablet) {
-        min-width: 19rem;
-    }
-
-    @include respond(phone) {
-        min-width: 12rem;
-    }
     
         &__progress-bar-fill {
             height: 100%;

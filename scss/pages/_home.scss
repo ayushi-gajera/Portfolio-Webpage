@@ -1,7 +1,7 @@
 .container {
     background-color: $color-light-green;
     overflow: hidden;
-    height: 100svh;
+    height: 110svh;
     width: 100%;
 
     @include respond(tab-port) {
@@ -35,10 +35,12 @@
 .project {
     margin-left: 1.5rem;
     margin-top: -2rem;
-    background-color: $color-white-light;
+    background-color: #fcfcfc;
     border-radius: 2rem;
     width: 61.5%;
-    height: 81%;
+    height: 88%;
+    padding: 0rem 3rem;
+    padding-top: 2rem;
 
     @include respond(tab-port) {
         height: 75%;
@@ -47,41 +49,23 @@
 }
 
 .project-card {
-    width: 102%;
-    height: 80%;
-    display: flex;
-    gap: 2rem;
-    row-gap: 2rem;
+    height: 73%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3rem;
     flex-wrap: wrap;
     overflow-y: scroll;
     scrollbar-width: none;
-    padding-bottom: 1rem;
-    
-    @include respond(tab-mini) {
-        min-width: 450px;
-        justify-content: space-around;
-        margin-left: -2.5rem;
-    }
+    padding-bottom: 3rem;
 
     @include respond(tab-port) {
-        margin-left: -1.5rem;
-        min-width: 320px;
-    }
-
-    @include respond(tablet) {
-        margin-left: -1.4rem;
-        min-width: 220px;
-    }
-
-    @include respond(phone) {
-        margin-left: -1.4rem;
-        min-width: 220px;
+        margin-top: 2rem;
     }
 }
 
 .message-section {
     width: 32%;
-    height: 100%;
+    height: 99%;
     margin-top: -1.1rem;
     margin-right: 2rem;
     position: relative;
