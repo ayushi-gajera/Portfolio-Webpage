@@ -1,5 +1,5 @@
 .hover-lines {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,12 +16,6 @@
     background-color: #00c0ff;
 }
 
-.hover-lines .line2 {
-    width: 60%;
-    height: 2px;
-    background-color: #00c0ff;
-}
-
 .project-card__1:hover .hover-lines {
     opacity: 1;
     transform: translateY(0);
@@ -33,6 +27,7 @@
     border-radius: 2rem;
     height: 16rem;
     padding: 1.1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     &__nav {
         display: flex;
@@ -175,7 +170,7 @@
 }
 
 .hover-lines2 {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -192,12 +187,6 @@
     background-color: rgb(235, 123, 11);
 }
 
-.hover-lines2 .line2 {
-    width: 60%;
-    height: 2px;
-    background-color: rgb(235, 123, 11);
-}
-
 .project-card__2:hover .hover-lines2 {
     opacity: 1;
     transform: translateY(0);
@@ -209,6 +198,7 @@
     border-radius: 2rem;
     height: 16rem;
     padding: 1.1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
         &__progress-bar-fill {
             height: 100%;
@@ -249,7 +239,7 @@
 }
 
 .hover-lines3 {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -266,12 +256,6 @@
     background-color: rgb(0, 168, 11);
 }
 
-.hover-lines3 .line2 {
-    width: 60%;
-    height: 2px;
-    background-color: rgb(0, 168, 11);
-}
-
 .project-card__3:hover .hover-lines3 {
     opacity: 1;
     transform: translateY(0);
@@ -283,6 +267,8 @@
     border-radius: 2rem;
     height: 16rem;
     padding: 1.1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
         &__progress-bar-fill {
             height: 100%;
             background-color: rgb(0, 168, 11);
@@ -322,7 +308,7 @@
 }
 
 .hover-lines4 {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -339,12 +325,6 @@
     background-color: palevioletred;
 }
 
-.hover-lines4 .line2 {
-    width: 60%;
-    height: 2px;
-    background-color: palevioletred;
-}
-
 .project-card__4:hover .hover-lines4 {
     opacity: 1;
     transform: translateY(0);
@@ -356,6 +336,7 @@
     border-radius: 2rem;
     height: 16rem;
     padding: 1.1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
         &__progress-bar-fill {
             height: 100%;

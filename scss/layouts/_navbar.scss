@@ -2,89 +2,63 @@
     display: flex;
 }
 
-.menu {
-    cursor: pointer;
+.searchbar {
     display: none;
-}
+    align-items: center;
+    background-color: $color-white;
+    border-radius: 2rem;
+    padding: 0.7rem 0.7rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 34rem;
 
+    @include respond(tablet) {
+        display: block;
+        margin: 1rem 2rem;
+    }
+
+    &__search {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        width: 9rem;
+    }
+    ::before {
+        color: $color-text-grey;
+        margin-right: 0.7rem;
+    }
+    ::placeholder {
+        color: $color-text-grey;
+        font-size: 0.9rem;
+    }
+}
 .nav {
     display: flex;
     justify-content: space-between;
     padding-top: 1.5rem;
 
     &__left-heading {
-        margin-left: 2.2rem;
+        margin-left: 2.5rem;
         display: flex;
         align-items: center;
         gap: 5.5rem;
 
         @include respond(tab-land) {
-            gap: 4rem;
+            gap: 4.9rem;
         }
 
         @include respond(tab-port) {
-            gap: 1.5rem;
+            gap: 1.9rem;
+        }
+
+        @include respond(tablet) {
+            gap: 1rem;
+            flex-direction: column;
+            align-items: start;
         }
     }
 
     &__right-heading {
         margin-right: 2rem;
-    }
-
-    @include respond(tablet) {
-
-        .menu {
-            display: block;
-            cursor: pointer;
-            font-size: 20px;
-            margin-top: 0.2rem;
-            margin-right: 1rem;
-        }
-          
-        .menu-items {
-            display: none;
-            position: absolute;
-            top: 52px;
-            right: 30px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            z-index: 1;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .show {
-            display: flex;
-        }
-    }
-
-    @include respond(phone) {
-
-        .menu {
-            display: block;
-            cursor: pointer;
-            font-size: 20px;
-            margin-top: 0.2rem;
-            margin-right: 1rem;
-        }
-          
-        .menu-items {
-            display: none;
-            position: absolute;
-            top: 52px;
-            right: 30px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            z-index: 1;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .show {
-            display: flex;
-        }
     }
     
     .nav__lines {
@@ -128,11 +102,8 @@
         }
 
         @include respond(tablet) {
+            display: none;
             width: 17rem;
-        }
-
-        @include respond(phone) {
-            width: 12rem;
         }
 
         &__search {
@@ -181,11 +152,12 @@
         @include respond(phone) {
             background-color: $color-black;
             border-radius: 50%;
-            height: 2rem;
-            width: 2rem;
+            height: 1.7rem;
+            width: 1.7rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-right: 0.4rem;
         }
     }
 
@@ -204,6 +176,13 @@
             position: absolute;
             left: 1rem;
             top: 0.4rem;
+
+            @include respond(phone) {
+                left: 0.9rem;
+                top: 0.4rem;
+                height: 0.3rem;
+                width: 0.3rem;
+            }
         }
 
         @include respond(tab-land) {
@@ -217,6 +196,11 @@
         @include respond(tab-port) {
             padding-right: 0.8rem;
         }
+
+        @include respond(phone) {
+            font-size: 1.5rem;
+            padding-right: 0.5rem;
+        }
     }
     &__profile {
         display: flex;
@@ -225,6 +209,9 @@
 
         @include respond(tab-port) {
             font-size: 1rem;
+        }
+        @include respond(phone) {
+            gap: 0.5rem;
         }
         
         &__img {
@@ -242,6 +229,11 @@
             @include respond(tab-port) {
                 height: 1.8rem;
                 width: 1.8rem;
+            }
+            @include respond(phone) {
+                margin-left: 0.5rem;
+                height: 1.7rem;
+                width: 1.7rem;
             }
         }
     }

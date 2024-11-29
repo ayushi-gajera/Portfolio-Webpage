@@ -7,12 +7,20 @@
 .aside-items {
     @include respond(tab-port) {  
         margin-top: -2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.4rem;
         
         .icons {
             display: flex;
             justify-content: space-evenly;
         }      
+
+        .icons .icons__home {
+            height: 3rem;
+            width: 3rem;
+            background-color: #000; 
+            color: $color-white;
+            border-radius: 50%;
+        }
     }
 
     @include respond(tablet) {      
@@ -21,7 +29,7 @@
         .icons {
             display: flex;
             justify-content: space-evenly;
-        }   
+        }  
     }
 
     @include respond(phone) {   
@@ -30,7 +38,14 @@
         .icons {
             display: flex;
             justify-content: space-evenly;
-        }      
+        }   
+        .icons .icons__home {
+            height: 2.5rem;
+            width: 2.5rem;
+            background-color: #000; 
+            color: $color-white;
+            border-radius: 50%;
+        }    
     }
 }
 
@@ -56,6 +71,16 @@
     justify-content: center;
     flex-direction: column;
 
+    @include respond(tab-port) {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    @include respond(phone) {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
     i {
         display: flex;
         justify-content: center;
@@ -70,6 +95,21 @@
         color: $color-white;
         border-radius: 50%;
         cursor: pointer;
+
+        @include respond(tab-port) {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        @include respond(tablet) {
+            height: 3rem;
+            width: 3rem;
+        }
+    
+        @include respond(phone) {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
     }
 
     @include respond(tab-land) {

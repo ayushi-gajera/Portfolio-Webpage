@@ -2,8 +2,10 @@
     color: $color-black;
     font-size: 2rem;
     font-weight: 700;
+    margin-left: -1rem;
 
     @include respond(tab-land) {
+        margin-left: -0.4rem;
         font-size: 1.9rem;
     }
 
@@ -16,10 +18,10 @@
     }
 
     @include respond(tablet) {
-        display: none;
+        font-size: 1.3rem;
     }
 
     @include respond(phone) {
-        display: none;
+        font-size: 1.25rem;    
     }
 }
