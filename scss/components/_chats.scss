@@ -231,7 +231,7 @@
         }
 
         @include respond(tab-port) {
-            height: 6.5rem;
+            height: 6.8rem;
         }
 
         @include respond(tablet) {
@@ -239,7 +239,7 @@
         }
         
         @include respond(phone) {
-            height: 9rem; 
+            height: 10rem; 
         }
     }
 
