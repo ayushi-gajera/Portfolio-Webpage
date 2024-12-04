@@ -33,8 +33,13 @@
 }
 .nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-top: 1.5rem;
+
+    @include respond(phone) {
+        margin-left: -1rem;
+    }
 
     &__left-heading {
         margin-left: 2.5rem;
@@ -59,6 +64,9 @@
 
     &__right-heading {
         margin-right: 2rem;
+        @include respond(phone) {
+            margin-right: 1rem;
+        }
     }
     
     .nav__lines {

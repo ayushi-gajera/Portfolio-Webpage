@@ -1,5 +1,5 @@
 .hover-lines {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,10 +8,20 @@
     opacity: 0;
     transform: translateY(10px);
     transition: all 0.3s ease;
+
+    @include respond(tab-land) {
+        margin-top: 2.5rem;
+    }
 }
 
 .hover-lines .line {
     width: 80%;
+    height: 2px;
+    background-color: #00c0ff;
+}
+
+.hover-lines .line2 {
+    width: 60%;
     height: 2px;
     background-color: #00c0ff;
 }
@@ -170,7 +180,7 @@
 }
 
 .hover-lines2 {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -179,10 +189,20 @@
     opacity: 0;
     transform: translateY(10px);
     transition: all 0.3s ease;
+
+    @include respond(tab-land) {
+        margin-top: 2.5rem;
+    }
 }
 
 .hover-lines2 .line {
     width: 80%;
+    height: 2px;
+    background-color: rgb(235, 123, 11);
+}
+
+.hover-lines2 .line2 {
+    width: 60%;
     height: 2px;
     background-color: rgb(235, 123, 11);
 }
@@ -239,7 +259,7 @@
 }
 
 .hover-lines3 {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -248,10 +268,20 @@
     opacity: 0;
     transform: translateY(10px);
     transition: all 0.3s ease;
+
+    @include respond(tab-land) {
+        margin-top: 2.5rem;
+    }
 }
 
 .hover-lines3 .line {
     width: 80%;
+    height: 2px;
+    background-color: rgb(0, 168, 11);
+}
+
+.hover-lines3 .line2 {
+    width: 60%;
     height: 2px;
     background-color: rgb(0, 168, 11);
 }
@@ -308,7 +338,7 @@
 }
 
 .hover-lines4 {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -317,10 +347,20 @@
     opacity: 0;
     transform: translateY(10px);
     transition: all 0.3s ease;
+
+    @include respond(tab-land) {
+        margin-top: 2.5rem;
+    }
 }
 
 .hover-lines4 .line {
     width: 80%;
+    height: 2px;
+    background-color: palevioletred;
+}
+
+.hover-lines4 .line2 {
+    width: 60%;
     height: 2px;
     background-color: palevioletred;
 }

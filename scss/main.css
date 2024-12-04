@@ -83,8 +83,14 @@ body {
 
 .nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-top: 1.5rem;
+}
+@media only screen and (max-width: 30em) {
+  .nav {
+    margin-left: -1rem;
+  }
 }
 .nav__left-heading {
   margin-left: 2.5rem;
@@ -111,6 +117,11 @@ body {
 }
 .nav__right-heading {
   margin-right: 2rem;
+}
+@media only screen and (max-width: 30em) {
+  .nav__right-heading {
+    margin-right: 1rem;
+  }
 }
 .nav .nav__lines {
   font-size: 1.5rem;
@@ -318,7 +329,7 @@ body {
   .aside-items {
     margin-top: -2rem;
     margin-bottom: 2.4rem;
-    margin-left: -1rem;
+    margin-left: -2rem;
   }
   .aside-items .icons {
     display: flex;
@@ -542,7 +553,7 @@ body {
 }
 
 .hover-lines {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -552,9 +563,20 @@ body {
   transform: translateY(10px);
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 75em) {
+  .hover-lines {
+    margin-top: 2.5rem;
+  }
+}
 
 .hover-lines .line {
   width: 80%;
+  height: 2px;
+  background-color: #00c0ff;
+}
+
+.hover-lines .line2 {
+  width: 60%;
   height: 2px;
   background-color: #00c0ff;
 }
@@ -702,7 +724,7 @@ body {
 }
 
 .hover-lines2 {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -712,9 +734,20 @@ body {
   transform: translateY(10px);
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 75em) {
+  .hover-lines2 {
+    margin-top: 2.5rem;
+  }
+}
 
 .hover-lines2 .line {
   width: 80%;
+  height: 2px;
+  background-color: rgb(235, 123, 11);
+}
+
+.hover-lines2 .line2 {
+  width: 60%;
   height: 2px;
   background-color: rgb(235, 123, 11);
 }
@@ -768,7 +801,7 @@ body {
 }
 
 .hover-lines3 {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -778,9 +811,20 @@ body {
   transform: translateY(10px);
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 75em) {
+  .hover-lines3 {
+    margin-top: 2.5rem;
+  }
+}
 
 .hover-lines3 .line {
   width: 80%;
+  height: 2px;
+  background-color: rgb(0, 168, 11);
+}
+
+.hover-lines3 .line2 {
+  width: 60%;
   height: 2px;
   background-color: rgb(0, 168, 11);
 }
@@ -834,7 +878,7 @@ body {
 }
 
 .hover-lines4 {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -844,9 +888,20 @@ body {
   transform: translateY(10px);
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 75em) {
+  .hover-lines4 {
+    margin-top: 2.5rem;
+  }
+}
 
 .hover-lines4 .line {
   width: 80%;
+  height: 2px;
+  background-color: palevioletred;
+}
+
+.hover-lines4 .line2 {
+  width: 60%;
   height: 2px;
   background-color: palevioletred;
 }
